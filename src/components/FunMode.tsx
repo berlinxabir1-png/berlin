@@ -18,18 +18,6 @@ export const FunMode: React.FC = () => {
     { title: 'Dirty', year: '2023', rating: '8.2' },
   ];
 
-  const recentTravel = {
-    location: "Cox's Bazar",
-    desc: "Exploring the world's longest natural sea beach.",
-    image: "https://images.unsplash.com/photo-1580137197581-df2bb346a786?q=80&w=1000&auto=format&fit=crop"
-  };
-
-  const nextTravel = {
-    location: "Bandarban",
-    desc: "Chasing clouds and mountains in the hill tracts.",
-    image: "https://images.unsplash.com/photo-1623939012339-59345f65977a?q=80&w=1000&auto=format&fit=crop"
-  };
-
   return (
     <section id="fun" className={`py-32 transition-all duration-1000 relative overflow-hidden ${isFunMode ? 'bg-neon-purple/20' : ''}`}>
       {/* Background elements for fun mode */}
@@ -106,67 +94,21 @@ export const FunMode: React.FC = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
-              className="mt-20 space-y-8"
+              className="mt-20 glass p-12 rounded-[4rem] text-center"
             >
-              <div className="glass p-12 rounded-[4rem] text-center">
-                <Heart className="text-neon-pink mx-auto mb-6 animate-pulse" size={48} fill="currentColor" />
-                <h3 className="text-4xl font-bold mb-8 tracking-tighter">Favorite Watchlist</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {favoriteMovies.map((movie) => (
-                    <div key={movie.title} className="p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                      <div className="text-neon-cyan font-mono text-xs mb-2">{movie.year}</div>
-                      <div className="font-bold text-lg mb-2">{movie.title}</div>
-                      <div className="flex items-center justify-center gap-1 text-xs text-white/40">
-                        <Star size={12} className="text-yellow-500" fill="currentColor" />
-                        {movie.rating} / 10
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Recent Travel */}
-                <div className="glass p-12 rounded-[4rem] flex flex-col items-center justify-center text-center">
-                  <div className="text-xs uppercase tracking-[0.4em] text-neon-blue mb-4">Recent Travel</div>
-                  <h3 className="text-4xl font-bold mb-6 tracking-tighter">{recentTravel.location}</h3>
-                  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-6 group">
-                    <img 
-                      src={recentTravel.image} 
-                      alt={recentTravel.location}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      referrerPolicy="no-referrer"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                      <p className="text-white text-sm font-medium">{recentTravel.desc}</p>
+              <Heart className="text-neon-pink mx-auto mb-6 animate-pulse" size={48} fill="currentColor" />
+              <h3 className="text-4xl font-bold mb-8 tracking-tighter">Favorite Watchlist</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                {favoriteMovies.map((movie) => (
+                  <div key={movie.title} className="p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                    <div className="text-neon-cyan font-mono text-xs mb-2">{movie.year}</div>
+                    <div className="font-bold text-lg mb-2">{movie.title}</div>
+                    <div className="flex items-center justify-center gap-1 text-xs text-white/40">
+                      <Star size={12} className="text-yellow-500" fill="currentColor" />
+                      {movie.rating} / 10
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 text-white/40 text-xs uppercase tracking-widest">
-                    <Star size={14} className="text-neon-blue" />
-                    Memorable Experience
-                  </div>
-                </div>
-
-                {/* Next Destination */}
-                <div className="glass p-12 rounded-[4rem] flex flex-col items-center justify-center text-center">
-                  <div className="text-xs uppercase tracking-[0.4em] text-neon-pink mb-4">Next Destination</div>
-                  <h3 className="text-4xl font-bold mb-6 tracking-tighter">{nextTravel.location}</h3>
-                  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-6 group">
-                    <img 
-                      src={nextTravel.image} 
-                      alt={nextTravel.location}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      referrerPolicy="no-referrer"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                      <p className="text-white text-sm font-medium">{nextTravel.desc}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 text-white/40 text-xs uppercase tracking-widest">
-                    <Sparkles size={14} className="text-neon-pink" />
-                    Adventure Awaits
-                  </div>
-                </div>
+                ))}
               </div>
             </motion.div>
           )}

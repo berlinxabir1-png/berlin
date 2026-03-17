@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { Projects } from './components/Projects';
+import { Travel } from './components/Travel';
 import { FunMode } from './components/FunMode';
 import { Contact } from './components/Contact';
 import { Background } from './components/Background';
@@ -20,7 +20,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Projects />
+        <Travel />
         <FunMode />
         <Contact />
       </main>
