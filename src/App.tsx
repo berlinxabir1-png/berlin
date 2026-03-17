@@ -1,0 +1,45 @@
+import React from 'react';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Projects } from './components/Projects';
+import { FunMode } from './components/FunMode';
+import { Contact } from './components/Contact';
+import { Background } from './components/Background';
+import { CustomCursor } from './components/CustomCursor';
+import { LoadingScreen } from './components/LoadingScreen';
+
+export default function App() {
+  return (
+    <div className="relative min-h-screen">
+      <LoadingScreen />
+      <CustomCursor />
+      <Background />
+      <Navbar />
+      
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <FunMode />
+        <Contact />
+      </main>
+
+      <footer className="py-12 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-xl font-bold tracking-tighter">
+            Berlin Ahmed Naim<span className="text-neon-purple">.</span>
+          </div>
+          <div className="text-white/30 text-xs uppercase tracking-widest">
+            © 2026 Berlin Ahmed Naim. Built with passion & motion.
+          </div>
+          <div className="flex gap-6">
+            <a href="#" className="text-white/30 hover:text-neon-purple transition-colors text-xs uppercase tracking-widest">Facebook</a>
+            <a href="#" className="text-white/30 hover:text-neon-pink transition-colors text-xs uppercase tracking-widest">Instagram</a>
+            <a href="#" className="text-white/30 hover:text-white transition-colors text-xs uppercase tracking-widest">Github</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
