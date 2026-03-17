@@ -105,7 +105,7 @@ export const Hero: React.FC = () => {
             />
             <div className="absolute inset-8 rounded-[2rem] overflow-hidden glass glow-box">
               <img 
-                src="https://scontent.fdac139-1.fna.fbcdn.net/v/t39.30808-6/646967235_1246426377625688_7621067675087767867_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=pCHti5dDuicQ7kNvwG2Np7Y&_nc_oc=AdmUzYJXmZvUpAWvsEFKxT_OXj_J3zdv6dDG4fS--c75EpwweudYq1JD-Z5V-TbnuAQ&_nc_zt=23&_nc_ht=scontent.fdac139-1.fna&_nc_gid=uhrK1f89MmTUx9xPyQjoUw&_nc_ss=8&oh=00_AfwWKxc8ZUp8pdqtIL0HEJdtzVuA5zu9Pbxeb7bpKBHJ3w&oe=69BF63DE" 
+                src="https://scontent.fdac139-1.fna.fbcdn.net/v/t39.30808-6/618121162_1210031077931885_1342644348710176401_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_ohc=Ny7hN6ouwh0Q7kNvwGK7Ujl&_nc_oc=AdmT1_-KMwqfoQFotrvHVfx4FmFIW_OPU_joAnlLBcHoIH1IiJeIygDqQN5H3e2LrTY&_nc_zt=23&_nc_ht=scontent.fdac139-1.fna&_nc_gid=UrA1gvFkn4FwpNW1dWcrdw&_nc_ss=8&oh=00_AfyIBoxEjEFINXF6SvyST_Rs5qINixQBVvQm-W39Yu2_hg&oe=69BF5BBA" 
                 alt="Berlin Ahmed Naim" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"

@@ -8,7 +8,7 @@ export const Travel: React.FC = () => {
       type: 'RECENT TRAVEL',
       location: "Cox's Bazar, Bangladesh",
       desc: "World's longest sea beach",
-      image: "https://images.unsplash.com/photo-1623090856913-903490795462?q=80&w=1000&auto=format&fit=crop",
+      image: "https://picsum.photos/seed/coxsbazar1/800/500",
       icon: <Plane size={18} />,
       color: 'text-neon-cyan',
       bgColor: 'bg-neon-cyan/10'
@@ -17,7 +17,7 @@ export const Travel: React.FC = () => {
       type: 'NEXT DESTINATION',
       location: "Cox's Bazar, Bangladesh",
       desc: "The world's longest natural sea beach",
-      image: "https://images.unsplash.com/photo-1580137197581-df2bb346a786?q=80&w=1000&auto=format&fit=crop",
+      image: "https://picsum.photos/seed/coxsbazar2/800/500",
       icon: <MapPin size={18} />,
       color: 'text-neon-emerald',
       bgColor: 'bg-neon-emerald/10'
@@ -26,7 +26,7 @@ export const Travel: React.FC = () => {
       type: 'NEXT DESTINATION',
       location: "Bandarban, Bangladesh",
       desc: "The queen of hills",
-      image: "https://images.unsplash.com/photo-1623939012339-59345f65977a?q=80&w=1000&auto=format&fit=crop",
+      image: "https://picsum.photos/seed/bandarban/800/500",
       icon: <Compass size={18} />,
       color: 'text-neon-purple',
       bgColor: 'bg-neon-purple/10'
