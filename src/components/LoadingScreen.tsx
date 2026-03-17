@@ -25,19 +25,19 @@ export const LoadingScreen: React.FC = () => {
         <motion.div
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-[10000] bg-[#030303] flex flex-col items-center justify-center"
+          className="fixed inset-0 z-[10000] bg-[#0a0a0f] flex flex-col items-center justify-center"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             className="text-4xl font-bold tracking-tighter mb-8"
           >
-            Berlin Ahmed Naim<span className="text-neon-purple">.</span>
+            Berlin Ahmed Naim<span className="text-neon-emerald">.</span>
           </motion.div>
           
           <div className="w-64 h-1 bg-white/5 rounded-full overflow-hidden relative">
             <motion.div 
-              className="absolute inset-0 bg-gradient-to-r from-neon-purple to-neon-blue"
+              className="absolute inset-0 bg-gradient-to-r from-neon-emerald to-neon-blue"
               style={{ width: `${progress}%` }}
             />
           </div>

@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
           
           <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-6">
             Berlin <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-neon-blue to-neon-cyan">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-emerald via-neon-blue to-neon-purple">
               Ahmed Naim
             </span>
           </h1>
@@ -69,6 +69,7 @@ export const Hero: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-4 bg-white text-black font-bold rounded-full flex items-center gap-2 hover:bg-neon-purple hover:text-white transition-colors"
             >
               View Projects <ArrowRight size={18} />
@@ -76,6 +77,7 @@ export const Hero: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-4 glass font-bold rounded-full hover:bg-white/10 transition-colors"
             >
               Contact Me

@@ -12,8 +12,8 @@ export const Contact: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.4em] text-neon-cyan mb-4">Contact</h2>
-            <h3 className="text-5xl font-bold tracking-tighter mb-8">Let's build something <span className="text-neon-cyan">extraordinary.</span></h3>
+            <h2 className="text-sm font-bold uppercase tracking-[0.4em] text-neon-emerald mb-4">Contact</h2>
+            <h3 className="text-5xl font-bold tracking-tighter mb-8">Let's build something <span className="text-neon-emerald">extraordinary.</span></h3>
             <p className="text-lg text-white/60 mb-12 leading-relaxed">
               Have a project in mind or just want to say hi? My inbox is always open. 
               I'm currently looking for new opportunities and collaborations.
@@ -21,21 +21,12 @@ export const Contact: React.FC = () => {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-neon-cyan group-hover:bg-neon-cyan group-hover:text-black transition-all">
+                <div className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-neon-emerald group-hover:bg-neon-emerald group-hover:text-black transition-all">
                   <Mail size={20} />
                 </div>
                 <div>
                   <div className="text-xs text-white/40 uppercase tracking-widest">Email</div>
-                  <div className="font-bold">hello@aura.dev</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-neon-cyan group-hover:bg-neon-cyan group-hover:text-black transition-all">
-                  <MessageSquare size={20} />
-                </div>
-                <div>
-                  <div className="text-xs text-white/40 uppercase tracking-widest">Discord</div>
-                  <div className="font-bold">aura_dev#1234</div>
+                  <div className="font-bold">naimshakh334@gmail.com</div>
                 </div>
               </div>
             </div>
@@ -56,7 +47,7 @@ export const Contact: React.FC = () => {
                     <input 
                       type="text" 
                       placeholder="Your Name"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 focus:outline-none focus:border-neon-cyan transition-colors"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 focus:outline-none focus:border-neon-emerald transition-colors"
                     />
                   </div>
                 </div>
@@ -67,7 +58,7 @@ export const Contact: React.FC = () => {
                     <input 
                       type="email" 
                       placeholder="your@email.com"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 focus:outline-none focus:border-neon-cyan transition-colors"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 focus:outline-none focus:border-neon-emerald transition-colors"
                     />
                   </div>
                 </div>
@@ -77,13 +68,13 @@ export const Contact: React.FC = () => {
                 <textarea 
                   rows={4}
                   placeholder="Tell me about your project..."
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-4 focus:outline-none focus:border-neon-cyan transition-colors resize-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-4 focus:outline-none focus:border-neon-emerald transition-colors resize-none"
                 />
               </div>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 bg-neon-cyan text-black font-bold rounded-2xl flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] transition-all"
+                className="w-full py-4 bg-neon-emerald text-black font-bold rounded-2xl flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] transition-all"
               >
                 Send Message <Send size={18} />
               </motion.button>

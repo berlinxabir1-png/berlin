@@ -15,17 +15,18 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
+    { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Travel', href: '#travel' },
-    { name: 'Fun Mode', href: '#fun' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Vote', href: '#vote' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'py-4 glass' : 'py-6 bg-transparent'
+        isScrolled ? 'py-4 bg-[#0a0a0f]/80 backdrop-blur-md border-b border-white/5' : 'py-6 bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -33,9 +34,10 @@ export const Navbar: React.FC = () => {
           href="#"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-display font-bold tracking-tighter"
+          className="text-2xl font-display font-bold tracking-tighter flex items-center gap-2"
         >
-          Berlin Ahmed Naim<span className="text-neon-purple">.</span>
+          <span className="text-neon-emerald">BERLIN</span>
+          <span className="text-white">AHMED NAIM</span>
         </motion.a>
 
         {/* Desktop Nav */}
@@ -59,7 +61,7 @@ export const Navbar: React.FC = () => {
           >
             <a href="https://www.facebook.com/nayyembinsaikat" className="text-white/50 hover:text-neon-purple hover:scale-110 transition-all duration-300"><Facebook size={18} /></a>
             <a href="https://www.instagram.com/saikat_69x" className="text-white/50 hover:text-neon-pink hover:scale-110 transition-all duration-300"><Instagram size={18} /></a>
-            <a href="#" className="text-white/50 hover:text-white hover:scale-110 transition-all duration-300"><Github size={18} /></a>
+            <a href="https://github.com/nayyembinsaikat" className="text-white/50 hover:text-white hover:scale-110 transition-all duration-300"><Github size={18} /></a>
           </motion.div>
         </div>
 

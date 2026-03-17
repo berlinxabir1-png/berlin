@@ -2,11 +2,11 @@ import React from 'react';
 
 export const Background: React.FC = () => {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-[#030303]">
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-[#0a0a0f]">
       {/* Radial Gradients for Atmosphere */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-neon-purple/10 blur-[120px]" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-neon-emerald/10 blur-[120px]" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-neon-blue/10 blur-[120px]" />
-      <div className="absolute top-[30%] right-[10%] w-[30%] h-[30%] rounded-full bg-neon-pink/5 blur-[100px]" />
+      <div className="absolute top-[30%] right-[10%] w-[30%] h-[30%] rounded-full bg-neon-purple/5 blur-[100px]" />
       
       {/* Grid Pattern */}
       <div 
