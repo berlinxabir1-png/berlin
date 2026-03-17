@@ -57,8 +57,8 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             className="flex items-center gap-4 ml-4 border-l border-white/10 pl-8"
           >
-            <a href="#" className="text-white/50 hover:text-neon-purple hover:scale-110 transition-all duration-300"><Facebook size={18} /></a>
-            <a href="#" className="text-white/50 hover:text-neon-pink hover:scale-110 transition-all duration-300"><Instagram size={18} /></a>
+            <a href="https://www.facebook.com/nayyembinsaikat" className="text-white/50 hover:text-neon-purple hover:scale-110 transition-all duration-300"><Facebook size={18} /></a>
+            <a href="https://www.instagram.com/saikat_69x" className="text-white/50 hover:text-neon-pink hover:scale-110 transition-all duration-300"><Instagram size={18} /></a>
             <a href="#" className="text-white/50 hover:text-white hover:scale-110 transition-all duration-300"><Github size={18} /></a>
           </motion.div>
         </div>

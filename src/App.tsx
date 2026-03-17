@@ -34,8 +34,8 @@ export default function App() {
             © 2026 Berlin Ahmed Naim. Built with passion & motion.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-white/30 hover:text-neon-purple transition-colors text-xs uppercase tracking-widest">Facebook</a>
-            <a href="#" className="text-white/30 hover:text-neon-pink transition-colors text-xs uppercase tracking-widest">Instagram</a>
+            <a href="https://www.facebook.com/nayyembinsaikat" className="text-white/30 hover:text-neon-purple transition-colors text-xs uppercase tracking-widest">Facebook</a>
+            <a href="https://www.instagram.com/saikat_69x" className="text-white/30 hover:text-neon-pink transition-colors text-xs uppercase tracking-widest">Instagram</a>
             <a href="#" className="text-white/30 hover:text-white transition-colors text-xs uppercase tracking-widest">Github</a>
           </div>
         </div>
